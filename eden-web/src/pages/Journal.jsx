@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import '../App.css'
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
@@ -163,7 +162,6 @@ function JournalSection() {
               </div>
             </div>
 
-            {/* Articles Grid */}
             <div
               ref={gridRef}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-7 gap-y-10 sm:gap-y-12 lg:gap-y-13"
