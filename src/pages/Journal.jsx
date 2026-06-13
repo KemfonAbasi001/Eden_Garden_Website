@@ -398,7 +398,7 @@ function Rarecard({ pics, paragraone, headive, paragathree, title, isVisible, de
       className={`w-full h-full gap-4 sm:gap-5 flex flex-col group ${base} ${isVisible ? show : hidden}`}
       style={{ transitionDelay: delay }}
     >
-      <div className="w-full h-60 sm:h-60 lg:h-70 overflow-hidden">
+      <div className="w-full h-48 sm:h-60 lg:h-70 overflow-hidden">
         <img
           src={pics}
           alt={headive}
@@ -470,7 +470,7 @@ function JournalSection() {
     <>
       <NavBar section="journal" />
 
-      <section className="w-full py-35 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
+      <section className="w-full py-16 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
         <div className="w-[93%] flex flex-col justify-center items-center gap-14 sm:gap-18 lg:gap-22">
 
           {/* Header */}
@@ -482,7 +482,7 @@ function JournalSection() {
               Stories & Explorations
             </p>
             <h1
-              className={`text-[48px] sm:text-[72px] md:text-[84px] lg:text-[96px] leading-tight font-normal tracking-[2.4px] sm:tracking-[3.6px] lg:tracking-[4.8px] text-[#1C221F] font-cormorant ${base} ${headerVisible ? show : hidden}`}
+              className={`text-[52px] sm:text-[72px] md:text-[84px] lg:text-[96px] leading-tight font-normal tracking-[2.4px] sm:tracking-[3.6px] lg:tracking-[4.8px] text-[#1C221F] font-cormorant ${base} ${headerVisible ? show : hidden}`}
               style={{ transitionDelay: "120ms" }}
             >
               Botanical <span className="italic">Journal</span>
@@ -494,7 +494,7 @@ function JournalSection() {
             {/* Hero Article */}
             <div
               ref={heroRef}
-              className={`w-full relative h-84 sm:h-96 md:h-[480px] lg:h-[510px] overflow-hidden ${base} ${heroVisible ? show : hidden}`}
+              className={`w-full relative h-64 sm:h-96 md:h-[480px] lg:h-[510px] overflow-hidden ${base} ${heroVisible ? show : hidden}`}
               style={{ transitionDelay: "0ms" }}
             >
               <img
@@ -502,12 +502,12 @@ function JournalSection() {
                 alt="The Art of Japanese Garden Design"
                 className="h-full w-full block object-cover"
               />
-              <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/70" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70" />
               <div className="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 lg:bottom-17 lg:left-15 max-w-[90%] sm:max-w-[520px] lg:max-w-[584px] flex flex-col gap-3 sm:gap-4">
                 <p className="text-[10px] sm:text-[12px] leading-4 font-medium tracking-[3px] sm:tracking-[3.6px] text-[#808080] uppercase font-inter">
                   garden design
                 </p>
-                <h1 className="text-[25px] lg:text-[48px] leading-tight font-medium tracking-[1.4px] sm:tracking-[2.4px] text-[#FFFFFF] font-cormorant">
+                <h1 className="text-[28px] sm:text-[38px] md:text-[44px] lg:text-[48px] leading-tight font-medium tracking-[1.4px] sm:tracking-[2.4px] text-[#FFFFFF] font-cormorant">
                   The Art of Japanese Garden Design
                 </h1>
                 <p className="font-normal leading-6 tracking-[.4px] text-[#808080] font-inter text-[13px] sm:text-[14px]">

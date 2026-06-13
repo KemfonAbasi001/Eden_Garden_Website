@@ -283,7 +283,7 @@ function GallerySection() {
     <>
       <NavBar section="gallery" />
 
-      <section className="w-full py-40 lg:py-35 flex justify-center items-center">
+      <section className="w-full py-16 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
         <div className="w-[93%] flex flex-col justify-center items-center gap-14 sm:gap-18 lg:gap-22">
 
           {/* Header */}
@@ -295,7 +295,7 @@ function GallerySection() {
               Botanical Masterpieces
             </p>
             <h1
-              className={`text-[48px] sm:text-[72px] md:text-[84px] lg:text-[96px] leading-tight font-normal tracking-[2.4px] sm:tracking-[3.6px] lg:tracking-[4.8px] text-[#1C221F] font-cormorant ${base} ${headerVisible ? show : hidden}`}
+              className={`text-[52px] sm:text-[72px] md:text-[84px] lg:text-[96px] leading-tight font-normal tracking-[2.4px] sm:tracking-[3.6px] lg:tracking-[4.8px] text-[#1C221F] font-cormorant ${base} ${headerVisible ? show : hidden}`}
               style={{ transitionDelay: "120ms" }}
             >
               Flower <span className="italic">Gallery</span>
@@ -318,9 +318,9 @@ function GallerySection() {
                   alt={label}
                   className="w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/50" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
                 <div className="absolute bottom-6 left-6 sm:bottom-9 sm:left-8 flex flex-col gap-2">
-                  <h1 className="text-[27px] leading-tight font-medium tracking-[1.2px] text-[#FFFFFF] font-cormorant">
+                  <h1 className="text-[20px] sm:text-[22px] md:text-[24px] leading-tight font-medium tracking-[1.2px] text-[#FFFFFF] font-cormorant">
                     {label}
                   </h1>
                 </div>

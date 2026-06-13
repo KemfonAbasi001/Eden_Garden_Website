@@ -317,7 +317,7 @@ function AboutSection() {
       <section
         ref={heroRef}
         style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${photoOne})` }}
-        className="w-full py-50 sm:py-32 md:py-40 lg:py-45 flex items-center justify-center flex-col text-center gap-4 sm:gap-5 bg-cover bg-center bg-no-repeat"
+        className="w-full py-24 sm:py-32 md:py-40 lg:py-45 flex items-center justify-center flex-col text-center gap-4 sm:gap-5 bg-cover bg-center bg-no-repeat"
       >
         <p
           className={`text-[#999999] text-[11px] sm:text-[13px] md:text-[14px] font-normal leading-5 tracking-[4px] sm:tracking-[5.6px] uppercase font-inter ${base} ${heroVisible ? show : hidden}`}
@@ -389,7 +389,7 @@ function AboutSection() {
               <p className="text-[11px] sm:text-[12px] leading-4 font-normal tracking-[4px] sm:tracking-[4.8px] uppercase font-inter text-[#6D7873]">
                 Philosophy
               </p>
-              <h1 className="text-[35px] sm:text-[50px] md:text-[56px] lg:text-[60px] leading-tight font-normal tracking-[2px] sm:tracking-[3px] font-cormorant text-[#1C221F]">
+              <h1 className="text-[40px] sm:text-[50px] md:text-[56px] lg:text-[60px] leading-tight font-normal tracking-[2px] sm:tracking-[3px] font-cormorant text-[#1C221F]">
                 Nature is the <span className="italic">ultimate</span> luxury
               </h1>
               <p className="text-[13px] sm:text-[14px] leading-6 font-normal text-[#6D7873] font-inter">

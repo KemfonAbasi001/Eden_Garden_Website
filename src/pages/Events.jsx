@@ -439,7 +439,7 @@ function EventSection() {
     <>
       <NavBar section="events" />
 
-      <section className="w-full py-35 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
+      <section className="w-full py-16 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
         <div className="w-[92%] flex flex-col justify-center items-center gap-14 sm:gap-18 lg:gap-22">
 
           {/* Header */}

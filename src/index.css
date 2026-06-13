@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff4d;
+}
+
+h1,p{
+  margin: 0;
+}
+
+
+/* #nav-header--scrolled {
+    background-color: #F9F8F6;
+    backdrop-filter: blur(14px);
+    color: black;
+} */
+
+
+
+#active{
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  /* text-decoration-color: red; */
+}
+
+#d:hover{
+  color: black;
+
+}
+
+#d{
+  transition: all .5s ease;
+}

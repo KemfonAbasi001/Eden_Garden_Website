@@ -168,7 +168,7 @@ function ArchCard({ src, tag, title, isVisible, delay, tall }) {
         alt={title}
         className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70" />
       <div className="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 lg:bottom-17 lg:left-15 max-w-[280px] sm:max-w-[384px] flex flex-col gap-2">
         <p className="text-[10px] sm:text-[12px] leading-4 font-medium tracking-[3px] sm:tracking-[3.6px] text-[#808080] uppercase font-inter">
           {tag}
@@ -192,7 +192,7 @@ function ArchitectureSection() {
     <>
       <NavBar section="architecture" />
 
-      <section className="w-full py-35 lg:py-35 flex justify-center items-center">
+      <section className="w-full py-16 sm:py-24 md:py-28 lg:py-35 flex justify-center items-center">
         <div className="w-[95%] flex flex-col justify-center items-center gap-14 sm:gap-18 lg:gap-22">
 
           {/* Header */}
