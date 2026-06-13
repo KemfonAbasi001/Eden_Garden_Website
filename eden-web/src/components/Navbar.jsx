@@ -110,3 +110,4 @@ function NavBar({ section = 'home' }) {
 }
 
 export default NavBar
+

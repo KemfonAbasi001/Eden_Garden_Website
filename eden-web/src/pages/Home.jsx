@@ -44,8 +44,7 @@ const show = "opacity-100 translate-y-0";
 
 function HomeCardOne({ hreff, imgOne, paragraph, header, isVisible, delay }) {
   return (
-    <a
-      href={hreff}
+    <div
       className={`w-full relative overflow-hidden group ${base} ${isVisible ? show : hidden}`}
       style={{ transitionDelay: delay }}
     >
@@ -63,14 +62,13 @@ function HomeCardOne({ hreff, imgOne, paragraph, header, isVisible, delay }) {
           {header}
         </h1>
       </div>
-    </a>
+    </div>
   );
 }
 
 function HomeCardTwo({ link, pics, paragraphOne, headerOne, isVisible, delay }) {
   return (
-    <a
-      href={link}
+    <div
       className={`w-full relative overflow-hidden group ${base} ${isVisible ? show : hidden}`}
       style={{ transitionDelay: delay }}
     >
@@ -88,7 +86,7 @@ function HomeCardTwo({ link, pics, paragraphOne, headerOne, isVisible, delay }) 
           {headerOne}
         </h1>
       </div>
-    </a>
+    </div>
   );
 }
 
@@ -138,7 +136,7 @@ function HomeSection() {
           The world's most exclusive
         </p>
         <h1
-          className={`text-[60px] leading-16.25 sm:text-[80px] sm:leading-20 md:text-[100px] md:leading-25 lg:text-[118px] lg:leading-29.5 font-light tracking-[3px] sm:tracking-[5px] lg:tracking-[6.4px] text-[#FFFFFF] font-cormorant ${base} ${heroVisible ? show : hidden}`}
+          className={`text-[67px] leading-16.25 sm:text-[80px] sm:leading-20 md:text-[100px] md:leading-25 lg:text-[118px] lg:leading-29.5 font-light tracking-[3px] sm:tracking-[5px] lg:tracking-[6.4px] text-[#FFFFFF] font-cormorant ${base} ${heroVisible ? show : hidden}`}
           style={{ transitionDelay: "120ms" }}
         >
           Botanical <br /><span className="text-[#E2AF36] italic">Paradise</span>

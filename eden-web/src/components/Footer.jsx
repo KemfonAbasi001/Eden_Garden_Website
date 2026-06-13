@@ -95,6 +95,7 @@ function FooterSection() {
 
         </div>
 
+
         <div
           ref={bottomRef}
           className={`flex flex-col sm:flex-row justify-between items-start sm:items-center py-7 gap-3 border-t border-b-0 border-r-0 border-l-0 border-solid border-[#FFFFFF80] ${base} ${bottomVisible ? show : hidden}`}
