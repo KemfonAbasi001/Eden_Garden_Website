@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff4d;
+}
+
+h1,p{
+  margin: 0;
+}
