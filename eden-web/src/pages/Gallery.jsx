@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
-import pics from '../assets/pic-one.png'
-import picsOne from '../assets/pic-two.png'
-import picsTwo from '../assets/pic-three.png'
-import picsThree from '../assets/pic-foour.png'
-import imgTen from '../assets/photo-tem.png'
-import picsT from '../assets/pics-fifty.png'
+import pics from '../assets/pic-one.webP'
+import picsOne from '../assets/pic-two.webP'
+import picsTwo from '../assets/pic-three.webP'
+import picsThree from '../assets/pic-foour.webP'
+import imgTen from '../assets/photo-tem.webP'
+import picsT from '../assets/pics-fifty.webP'
 
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
@@ -84,6 +84,7 @@ function GallerySection() {
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <img
+                  loading="lazy"
                   src={src}
                   alt={label}
                   className="w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"

@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import imgOne from '../assets/photo-one.png'
-import imgTwo from '../assets/photo-two.png'
-import imgThree from '../assets/photo-three.png'
-import imgFive from '../assets/photo-five.png'
-import imgEleven from '../assets/photo-eleven.png'
-import pics from '../assets/pic-one.png'
+import imgOne from '../assets/photo-one.webP'
+import imgTwo from '../assets/photo-two.webP'
+import imgThree from '../assets/photo-three.webP'
+import imgFive from '../assets/photo-five.webP'
+import imgEleven from '../assets/photo-eleven.webP'
+import pics from '../assets/pic-one.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -45,6 +45,7 @@ function Rarecard({ pics, paragraone, headive, paragathree, title, isVisible, de
     >
       <div className="w-full h-60 sm:h-60 lg:h-70 overflow-hidden">
         <img
+        loading="lazy"
           src={pics}
           alt={headive}
           className="w-full h-full object-cover block transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -141,6 +142,7 @@ function JournalSection() {
               style={{ transitionDelay: "0ms" }}
             >
               <img
+              loading="lazy"
                 src={imgOne}
                 alt="The Art of Japanese Garden Design"
                 className="h-full w-full block object-cover"

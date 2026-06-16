@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import photoOne from '../assets/img-one.png'
-import imgFive from '../assets/photo-five.png'
+import photoOne from '../assets/img-one.webP'
+import imgFive from '../assets/photo-five.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -108,6 +108,7 @@ function AboutSection() {
                 src={imgFive}
                 className="block w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                 alt="Philosophy"
+                loading="lazy"
               />
             </div>
             <div

@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import imgFour from '../assets/photo-four.png'
-import imgFive from '../assets/photo-five.png'
-import imgEight from '../assets/photo-eight.png'
-import imgNine from '../assets/photo-nine.png'
-import imgTen from '../assets/photo-tem.png'
-import imgEleven from '../assets/photo-eleven.png'
+import imgFour from '../assets/photo-four.webP'
+import imgFive from '../assets/photo-five.webP'
+import imgEight from '../assets/photo-eight.webP'
+import imgNine from '../assets/photo-nine.webP'
+import imgTen from '../assets/photo-tem.webP'
+import imgEleven from '../assets/photo-eleven.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -44,6 +44,7 @@ function ArchCard({ src, tag, title, isVisible, delay, tall }) {
       style={{ transitionDelay: delay }}
     >
       <img
+        loading="lazy"
         src={src}
         alt={title}
         className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"

@@ -3,16 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import bg_image from '../assets/bg-image.png'
-import imgOne from '../assets/photo-one.png'
-import imgTwo from '../assets/photo-two.png'
-import imgThree from '../assets/photo-three.png'
-import imgFour from '../assets/photo-four.png'
-import photoOne from '../assets/img-one.png'
-import pics from '../assets/pic-one.png'
-import picsOne from '../assets/pic-two.png'
-import picsTwo from '../assets/pic-three.png'
-import picsThree from '../assets/pic-foour.png'
+import bg_image from '../assets/bg-image.webP'
+import imgOne from '../assets/photo-one.webP'
+import imgTwo from '../assets/photo-two.webP'
+import imgThree from '../assets/photo-three.webP'
+import imgFour from '../assets/photo-four.webP'
+import photoOne from '../assets/img-one.webP'
+import pics from '../assets/pic-one.webP'
+import picsOne from '../assets/pic-two.webP'
+import picsTwo from '../assets/pic-three.webP'
+import picsThree from '../assets/pic-foour.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -49,6 +49,7 @@ function HomeCardOne({ hreff, imgOne, paragraph, header, isVisible, delay }) {
       style={{ transitionDelay: delay }}
     >
       <img
+      loading="lazy"
         src={imgOne}
         alt={header}
         className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -73,6 +74,7 @@ function HomeCardTwo({ link, pics, paragraphOne, headerOne, isVisible, delay }) 
       style={{ transitionDelay: delay }}
     >
       <img
+      loading="lazy"
         src={pics}
         alt={headerOne}
         className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"

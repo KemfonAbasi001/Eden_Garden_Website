@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import imgOne from '../assets/photo-one.png'
-import imgTwo from '../assets/photo-two.png'
-import imgThree from '../assets/photo-three.png'
-import imgFour from '../assets/photo-four.png'
-import imgFive from '../assets/photo-five.png'
-import imgSix from '../assets/photo-six.png'
-import imgSeven from '../assets/photo-seven.png'
-import imgEight from '../assets/photo-eight.png'
+import imgOne from '../assets/photo-one.webP'
+import imgTwo from '../assets/photo-two.webP'
+import imgThree from '../assets/photo-three.webP'
+import imgFour from '../assets/photo-four.webP'
+import imgFive from '../assets/photo-five.webP'
+import imgSix from '../assets/photo-six.webP'
+import imgSeven from '../assets/photo-seven.webP'
+import imgEight from '../assets/photo-eight.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -45,7 +45,7 @@ function FullComp({ imge, paraone, headone, paratwo, isVisible, delay }) {
       className={`w-full relative overflow-hidden group ${base} ${isVisible ? show : hidden}`}
       style={{ transitionDelay: delay }}
     >
-      <img src={imge} alt={headone} className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <img loading="lazy" src={imge} alt={headone} className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
       <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/70" />
       <div className="absolute bottom-9 left-5 sm:bottom-8 sm:left-8 max-w-70 sm:max-w-[384px] flex flex-col gap-1 sm:gap-2">
         <p className="text-[10px] sm:text-[12px] leading-4 font-medium tracking-[3px] sm:tracking-[3.6px] text-[#808080] uppercase font-inter">{paraone}</p>

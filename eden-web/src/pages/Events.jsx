@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import imgThree from '../assets/photo-three.png'
-import imgFour from '../assets/photo-four.png'
-import imgFive from '../assets/photo-five.png'
-import imgSix from '../assets/photo-six.png'
-import imgEleven from '../assets/photo-eleven.png'
-import imgTwelve from '../assets/photo-twelve.png'
+import imgThree from '../assets/photo-three.webP'
+import imgFour from '../assets/photo-four.webP'
+import imgFive from '../assets/photo-five.webP'
+import imgSix from '../assets/photo-six.webP'
+import imgEleven from '../assets/photo-eleven.webP'
+import imgTwelve from '../assets/photo-twelve.webP'
 
 function useScrollReveal() {
   const ref = useRef(null);
@@ -59,7 +59,7 @@ function ImgComp({ src, alt, isVisible, delay }) {
       className={`w-full overflow-hidden ${base} ${isVisible ? show : hidden}`}
       style={{ transitionDelay: delay }}
     >
-      <img src={src} alt={alt} className="h-full w-full block object-cover" />
+      <img loading="lazy" src={src} alt={alt} className="h-full w-full block object-cover" />
     </div>
   );
 }
