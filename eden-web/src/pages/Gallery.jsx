@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
-import pics from '../assets/pic-one.webP'
-import picsOne from '../assets/pic-two.webP'
-import picsTwo from '../assets/pic-three.webP'
-import picsThree from '../assets/pic-foour.webP'
-import imgTen from '../assets/photo-tem.webP'
-import picsT from '../assets/pics-fifty.webP'
+import pics from '../assets/pic-one.webp'
+import picsOne from '../assets/pic-two.webp'
+import picsTwo from '../assets/pic-three.webp'
+import picsThree from '../assets/pic-foour.webp'
+import imgTen from '../assets/photo-tem.webp'
+import picsT from '../assets/pics-fifty.webp'
 
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'

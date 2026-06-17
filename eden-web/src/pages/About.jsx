@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import photoOne from '../assets/img-one.webP'
-import imgFive from '../assets/photo-five.webP'
+import photoOne from '../assets/img-one.webp'
+import imgFive from '../assets/photo-five.webp'
 
 function useScrollReveal() {
   const ref = useRef(null);

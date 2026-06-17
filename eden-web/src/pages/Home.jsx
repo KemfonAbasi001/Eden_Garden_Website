@@ -3,16 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 import NavBar from '../components/Navbar.jsx'
 import FooterSection from '../components/Footer.jsx'
 
-import bg_image from '../assets/bg-image.webP'
-import imgOne from '../assets/photo-one.webP'
-import imgTwo from '../assets/photo-two.webP'
-import imgThree from '../assets/photo-three.webP'
-import imgFour from '../assets/photo-four.webP'
-import photoOne from '../assets/img-one.webP'
-import pics from '../assets/pic-one.webP'
-import picsOne from '../assets/pic-two.webP'
-import picsTwo from '../assets/pic-three.webP'
-import picsThree from '../assets/pic-foour.webP'
+import bg_image from '../assets/bg-image.webp'
+import imgOne from '../assets/photo-one.webp'
+import imgTwo from '../assets/photo-two.webp'
+import imgThree from '../assets/photo-three.webp'
+import imgFour from '../assets/photo-four.webp'
+import photoOne from '../assets/img-one.webp'
+import pics from '../assets/pic-one.webp'
+import picsOne from '../assets/pic-two.webp'
+import picsTwo from '../assets/pic-three.webp'
+import picsThree from '../assets/pic-foour.webp'
 
 function useScrollReveal() {
   const ref = useRef(null);
